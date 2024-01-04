@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: #d7dfd7;
+  color: rgb(3, 3, 3);
+
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Caveat', cursive;
+
+  /* font: normal 20px 'Caveat', cursive; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 6px 2px 20px 8px rgba(245, 2, 160, 0.433);
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
+
+.header-text {
+  margin-left: 40px;
+}
+
+.header-text h4 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #480101;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.header em {
+  text-decoration: underline;
+}
+
+.header__desc {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* .social {
+  background-color: green;
+  padding: 15px;
+  border: 5px solid #480101;
+  border-bottom: dotted;
+  margin: 20px;
+} */
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.bg-blue {
+  background: #e5e5ff;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.list {
+  padding: 0 20px;
+  /* list-style: none; */
+}
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.card-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.row {
+  display: flex;
+}
+
+.row > .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0px;
+}
+
+.btn {
+  margin-left: 80%;
+  margin-top: 10px;
+  background-color: #111;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 18px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;  
+}
+
+.btn:hover {
+  opacity: .9;
+}

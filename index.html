@@ -4,90 +4,137 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Denis Sarana</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <table cellspacing="50">
-      <tr>
-        <td>
-          <h2>My photo</h2>
-          <img src="./img/1.jpg" width="200" alt="Denis Sarana" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="header">
+        <img src="./img/1.jpg" class="avatar" alt="Denis Sarana" />
+        <div class="header-text">
           <h1>Profile</h1>
           <p>
             С этого дня пытаюсь изучить <em><strong>веб-разработку</strong></em>
           </p>
-          <hr />
-          <h2>Мои увлечения</h2>
-          <ol>
-            <li>Игры</li>
-            <li>ИТ</li>
-            <li>Машиностроение</li>
-            <li>Спорт</li>
-          </ol>
-          <hr />
-          <h2>Я, в социальных сетях:</h2>
-          <ul>
-            <li><a href="https://vk.com/new2008id" target="_blank">VK</a></li>
-            <li>
-              <a href="https://t.me/new2008id" target="_blank">Telegram</a>
-            </li>
-          </ul>
-          <hr />
-          <a href="./listProduct.html" target="_blank"
-            ><em>Сходить в магазин!</em></a
-          >
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Изучение технологий</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Имя</th>
-          <th>Время на обучение</th>
-          <th>Изучена/Не изучена</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML / CSS</td>
-          <td>1 месяц</td>
-          <td>В процессе</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>6 месяцев</td>
-          <td>Не начато</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Итог...</td>
-        </tr>
-      </tfoot>
-    </table>
-    <h2><em>Разработка формы</em></h2>
-    <form accept="/">
-      <label for="name">Введите имя: </label>
-      <input type="text" id="name" placeholder="Так..." />
+          <p class="header__desc">Мои первые шаги здесь...</p>
+          <h4>Я, в социальных сетях:</h4>
+          <a href="https://vk.com/new2008id" target="_blank">VK</a>
+          |
+          <a href="https://t.me/new2008id" target="_blank">Telegram</a>
+        </div>
+      </div>
+      <div class="card bg-yellow">
+        <h2>Мои увлечения</h2>
+        <ol class="list">
+          <li>Игры</li>
+          <li>ИТ</li>
+          <li>Машиностроение</li>
+          <li>Спорт</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>Изучение технологий</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Имя</th>
+              <th>Время на обучение</th>
+              <th>Изучена/Не изучена</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>HTML / CSS</td>
+              <td>1 месяц</td>
+              <td>В процессе</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>6 месяцев</td>
+              <td>Не начато</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>3 месяца</td>
+              <td>Не начато</td>
+            </tr>
+            <tr>
+              <td>Vue</td>
+              <td>3 месяца</td>
+              <td>Не начато</td>
+            </tr>
+            <tr>
+              <td>Mikrotik</td>
+              <td>6 месяцев</td>
+              <td>В процессе</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Итог...</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
 
-      <label for="email">Введите почта: </label>
-      <input type="email" id="email" placeholder="Почта..." />
-      <br />
-      <label for="password">Ваш пароль: </label>
-      <input type="password" id="password" placeholder="Password..." />
+      <div class="card bg-blue">
+        <h2>Roadmap</h2>
+        <ul class="card-list">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=SpCUuyZZTp8"
+              target="_blank"
+              >Изучение CSS</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=kz23xxukY5s"
+              target="_blank"
+              >React с Нуля для начинающих</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=BpljTtWH4fs&t"
+              target="_blank"
+              >Second Brain в Notion</a
+            >
+          </li>
+        </ul>
+      </div>
 
-      <label for="color">Ваш любимый цвет: </label>
-      <input type="color" id="color" placeholder="Color..." />
-
-      <label for="date">Текущая дата: </label>
-      <input type="date" id="date" placeholder="Date..." />
-      <br />
-      <input type="submit" value="Отправить мне"/>
-    </form>
-    <hr />
+      <div class="contact">
+        <div class="card bg-red">
+          <h2>Разработка формы</h2>
+          <form accept="/">
+            <div class="row">
+              <div class="form-group">
+                <label for="name">Введите имя: </label>
+                <input type="text" id="name" placeholder="Так..." />
+                <label for="email">Введите почта: </label>
+                <input type="email" id="email" placeholder="Почта..." />
+              </div>
+              <div class="form-group">
+                <label for="password">Ваш пароль: </label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password..."
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Ваше сообщение</label>
+              <textarea name="text" id="text" cols="10" rows="1"></textarea>
+              <br />
+              <label for="date">Текущая дата: </label>
+              <input type="date" id="date" placeholder="Date..." />
+            </div>
+            <input class="btn" type="submit" value="Отправить мне" />
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- <cite>Гарри Поттер</cite> -->
   </body>
 </html>
